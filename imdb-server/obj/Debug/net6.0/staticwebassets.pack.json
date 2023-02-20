@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\raz\\source\\repos\\imdb-server\\imdb-server\\wwwroot\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\3rdpartylicenses.txt"
+    },
+    {
+      "Id": "C:\\Users\\raz\\source\\repos\\imdb-server\\imdb-server\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\raz\\source\\repos\\imdb-server\\imdb-server\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\raz\\source\\repos\\imdb-server\\imdb-server\\wwwroot\\main.ef0e9d220a927985.js",
+      "PackagePath": "staticwebassets\\main.ef0e9d220a927985.js"
+    },
+    {
+      "Id": "C:\\Users\\raz\\source\\repos\\imdb-server\\imdb-server\\wwwroot\\polyfills.5a63f06f4df0f21f.js",
+      "PackagePath": "staticwebassets\\polyfills.5a63f06f4df0f21f.js"
+    },
+    {
+      "Id": "C:\\Users\\raz\\source\\repos\\imdb-server\\imdb-server\\wwwroot\\runtime.583ecc11a8733946.js",
+      "PackagePath": "staticwebassets\\runtime.583ecc11a8733946.js"
+    },
+    {
+      "Id": "C:\\Users\\raz\\source\\repos\\imdb-server\\imdb-server\\wwwroot\\styles.393da6be0b26adf9.css",
+      "PackagePath": "staticwebassets\\styles.393da6be0b26adf9.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.imdb-server.props",
+      "PackagePath": "build\\imdb-server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.imdb-server.props",
+      "PackagePath": "buildMultiTargeting\\imdb-server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.imdb-server.props",
+      "PackagePath": "buildTransitive\\imdb-server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.imdb-server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
