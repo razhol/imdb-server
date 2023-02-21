@@ -2,9 +2,9 @@
 
 namespace imdb_server.Controllers.Models
 {
-    public class ImdbMovie
+    public class ImdbMovieObject
     {
-        public List<MoiveItem> Search { get; set; }
+        public List<MovieDetails> Search { get; set; }
         public string? totalResults { get; set; }
         public string? Response { get; set; }
     }

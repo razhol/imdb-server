@@ -15,7 +15,7 @@ namespace imdb_server.Controllers
         public MoviesController(){}
         [HttpGet]
         [Route("/[Controller]/getById")]
-        public async Task<IActionResult> SearchById(string Id)
+        public async Task<IActionResult> SerachMovieById(string Id)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace imdb_server.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonString = await response.Content?.ReadAsStringAsync();
-                    var ObjectError = JsonConvert.DeserializeObject<ErrorImbd>(jsonString);
+                    var ObjectError = JsonConvert.DeserializeObject<ErrorImdb>(jsonString);
                     if (!string.IsNullOrEmpty(ObjectError.Error))
                     {
                         throw new ArgumentException(ObjectError.Error);
@@ -44,7 +44,7 @@ namespace imdb_server.Controllers
             }
         }
         [HttpGet]
-        public async Task<IActionResult> SearchMovies(string searchStr, int pageNumber)
+        public async Task<IActionResult> SearchMoviesByStr(string searchStr, int pageNumber)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace imdb_server.Controllers
                         throw new ArgumentException("Cannot be null or be empty");
                     }
                     var jsonString = await response.Content?.ReadAsStringAsync();
-                    var res = JsonConvert.DeserializeObject<ImdbMovie>(jsonString);
+                    var res = JsonConvert.DeserializeObject<ImdbMovieObject>(jsonString);
                     var IdList = res.Search.Select(x => x.imdbID);
                     List<MovieDetails> MovieList = new List<MovieDetails>();
                     foreach (var id in IdList)
